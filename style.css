@@ -1,0 +1,286 @@
+/* Custom CSS */
+
+/* --- General Styles --- */
+body {
+    font-family: Arial, sans-serif; /* Example font */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* --- Navbar Styles --- */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important; /* Bootstrap primary blue */
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    border-radius: 0.25rem; /* Slightly rounded corners */
+}
+
+/* --- Home Section --- */
+.home.section {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.home.section img {
+    width: 100%;
+    height: 60vh; /* Adjust as needed */
+    
+    filter: brightness(60%); /* Darken image for text readability */
+
+}
+
+.home.section h1,
+.home.section h2,
+.home.section p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width for text wrapping */
+}
+
+.home.section h2:first-of-type { /* For "For Men's" */
+    top: 35%;
+    font-size: 1.8rem;
+}
+
+.home.section h1 { /* For "High Quality Converse" */
+    top: 45%;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.home.section h2:last-of-type { /* For "for only $59.00" */
+    top: 60%;
+    font-size: 2rem;
+}
+
+.home.section p {
+    top: 70%;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* --- Section (End of Season Sale) --- */
+.section:not(.home) {
+    position: relative;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.section img {
+    width: 100%;
+    height: 60vh; /* Adjust as needed */
+    object-fit: cover;
+    filter: brightness(60%); /* Darken image for text readability */
+}
+.section h1 {
+    color: #d6d2d2; /* Bootstrap danger red for sale */
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.section h3 {
+    color: #6c757d; /* Bootstrap secondary gray */
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section .divider {
+    border-top: 1px solid #dee2e6;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* --- Items Section --- */
+.items {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.items h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #343a40; /* Darker text */
+}
+
+.items ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    gap: 1.5rem; /* Space between items */
+}
+
+.items li {
+    flex: 0 0 auto; /* Don't grow or shrink, base on content */
+}
+
+.items img {
+    width: 250px; /* Fixed width for consistency */
+    height: 250px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the area */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.items img:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* --- Newsletter Section --- */
+.newsletter {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.newsletter h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter .form-control {
+    border-radius: 0.25rem 0 0 0.25rem; /* Rounded left, sharp right */
+    border: none;
+}
+
+.newsletter .btn {
+    border-radius: 0 0.25rem 0.25rem 0; /* Sharp left, rounded right */
+    background-color: #28a745; /* Bootstrap success green */
+    border-color: #28a745;
+    color: white;
+}
+
+.newsletter .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+}
+
+/* --- Contact Section (Footer) --- */
+#contacts {
+    background-color: #343a40; /* Dark background for footer */
+    color: white;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem; /* Space between columns */
+    padding-left: 15px; /* Add some padding to the sides */
+    padding-right: 15px; /* Add some padding to the sides */
+}
+
+#contacts > div {
+    flex: 1; /* Allow columns to grow and shrink */
+    min-width: 200px; /* Minimum width for columns before wrapping */
+    text-align: left; /* Align text to the left within columns */
+}
+
+#contacts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #007bff; /* Highlight headings with primary color */
+}
+
+#contacts p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+#contacts a {
+    color: #17a2b8; /* Bootstrap info blue for links */
+    text-decoration: none;
+}
+
+#contacts a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .home.section h1 {
+        font-size: 2.5rem;
+    }
+
+    .home.section h2:first-of-type,
+    .home.section h2:last-of-type {
+        font-size: 1.4rem;
+    }
+
+    .home.section p {
+        font-size: 0.9rem;
+    }
+
+    .items ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items when stacked */
+    }
+
+    #contacts {
+        flex-direction: column; /* Stack contact sections vertically */
+        text-align: center; /* Center text when stacked */
+    }
+
+    #contacts > div {
+        margin-bottom: 2rem; /* Add space between stacked sections */
+    }
+}
+
+@media (max-width: 576px) {
+    .home.section img {
+        height: 40vh;
+    }
+
+    .home.section h1 {
+        font-size: 2rem;
+    }
+
+    .home.section h2:first-of-type,
+    .home.section h2:last-of-type {
+        font-size: 1.2rem;
+    }
+
+    .newsletter .form-control,
+    .newsletter .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+        border-radius: 0.25rem; /* Full rounding for small screens */
+    }
+    .newsletter form {
+        flex-direction: column;
+    }
+}
