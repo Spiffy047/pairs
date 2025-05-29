@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Cart</title>
 </head>
@@ -12,7 +13,7 @@
     <h1> Cart </h1>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a><img src="./images/logo.jpg" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +56,7 @@
             </li>
             <li class="nav-item">
                 <a href="cart.html" class="btn btn-primary">
-                    <i class="fas fa-shopping-cart"></i> Cart
+                    <i class="fas fa-shopping-cart"></i>
                 </a>
             </li>
           </ul>
@@ -77,28 +78,48 @@
            
            <tr>
             <td><img src="./images/item1.jpg" alt="Top" class="product-thumbnail">Top</td>
-            <td>Top</td>
             <td>$200</td>
-            <td>1</td>
+            <td>
+                <div class="input-group input-group-sm quantity-control">
+                        <button class="btn btn-outline-secondary minus-btn" type="button"><i class="fas fa-minus"></i></button>
+                        <input type="text" class="form-control text-center quantity-input" value="1" min="1" readonly>
+                        <button class="btn btn-outline-secondary plus-btn" type="button"><i class="fas fa-plus"></i></button>
+                    </div>
+            </td>
             <td>$200</td>
            </tr>
            <td><img src="./images/item2.jpg" alt="Jacket" class="product-thumbnail"> Jacket</td>
-           <td>Jacket</td>
            <td>$200</td>
-           <td>1</td>
+           <td>
+            <div class="input-group input-group-sm quantity-control">
+                        <button class="btn btn-outline-secondary minus-btn" type="button"><i class="fas fa-minus"></i></button>
+                        <input type="text" class="form-control text-center quantity-input" value="1" min="1" readonly>
+                        <button class="btn btn-outline-secondary plus-btn" type="button"><i class="fas fa-plus"></i></button>
+                    </div>
+           </td>
            <td>$200</td>
 
            <tr>
             <td><img src="./images/item3.jpg" alt="Scarf" class="product-thumbnail"> Scarf</td>
-            <td>Scarf</td>
             <td>$200</td>
-            <td>1</td>
+            <td>
+                <div class="input-group input-group-sm quantity-control">
+                        <button class="btn btn-outline-secondary minus-btn" type="button"><i class="fas fa-minus"></i></button>
+                        <input type="text" class="form-control text-center quantity-input" value="1" min="1" readonly>
+                        <button class="btn btn-outline-secondary plus-btn" type="button"><i class="fas fa-plus"></i></button>
+                    </div>
+            </td>
             <td>$200</td>
            </tr>
            <td><img src="./images/item4.jpg" alt="Tops" class="product-thumbnail"> Tops</td>
-           <td>Tops</td>
            <td>$200</td>
-           <td>1</td>
+           <td>
+            <div class="input-group input-group-sm quantity-control">
+                        <button class="btn btn-outline-secondary minus-btn" type="button"><i class="fas fa-minus"></i></button>
+                        <input type="text" class="form-control text-center quantity-input" value="1" min="1" readonly>
+                        <button class="btn btn-outline-secondary plus-btn" type="button"><i class="fas fa-plus"></i></button>
+                    </div>
+           </td>
            <td>$200</td>
         </table>
     </div>

@@ -11,7 +11,14 @@ body {
 .navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
 }
-
+.navbar img{
+    width: 120px; /* Adjust as needed */
+    height: 90px; /* Make it square */
+    object-fit: cover; /* Crop image to fit without distortion */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-right: 10px; /* Space between image and text */
+    vertical-align: middle; /* Align image nicely with the text */
+}
 .navbar-brand {
     font-weight: bold;
     color: #007bff !important; /* Bootstrap primary blue */
@@ -38,12 +45,12 @@ body {
 
 /* You might want to adjust for different button sizes if you use btn-lg, btn-sm */
 .btn-lg .button-icon {
-    width: 24px;
+    width: 40px;
     height: 24px;
 }
 
 .btn-sm .button-icon {
-    width: 16px;
+    width: 25px;
     height: 16px;
 }
 
@@ -225,7 +232,7 @@ body {
 
 /* --- Contact Section (Footer) --- */
 #contacts {
-    background-color: #343a40; /* Dark background for footer */
+    background-color: #676b70; /* Dark background for footer */
     color: white;
     padding: 4rem 0;
     display: flex;
@@ -271,6 +278,9 @@ body {
     color: #212529; /* Default text color for table */
    
 }
+.table th,td{
+    text-align: center;
+}
 .product-thumbnail {
     width: 60px; /* Adjust as needed */
     height: 60px; /* Make it square */
@@ -278,6 +288,13 @@ body {
     border-radius: 4px; /* Slightly rounded corners */
     margin-right: 10px; /* Space between image and text */
     vertical-align: middle; /* Align image nicely with the text */
+}
+
+.quantity-control {
+    /* This is the primary rule for controlling the width */
+    max-width: 120px; /* Adjust this value (e.g., 100px, 150px) to your desired size */
+    width: 100%;     /* Ensure it tries to take 100% of available space up to max-width */
+    margin: 0 auto;  /* Centers the input group itself if max-width makes it smaller than its parent */
 }
 
 /* --- Responsive Adjustments --- */
