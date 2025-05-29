@@ -28,6 +28,24 @@ body {
 .dropdown-menu {
     border-radius: 0.25rem; /* Slightly rounded corners */
 }
+/* Custom styling for icons/images inside buttons */
+.button-icon {
+    width: 20px;   /* Adjust width as needed */
+    height: 20px;  /* Adjust height to maintain aspect ratio */
+    margin-right: 8px; /* Space between the icon and the text */
+    vertical-align: middle; /* Helps align the image with the text baseline */
+}
+
+/* You might want to adjust for different button sizes if you use btn-lg, btn-sm */
+.btn-lg .button-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-sm .button-icon {
+    width: 16px;
+    height: 16px;
+}
 
 /* --- Home Section --- */
 .home.section {
@@ -85,23 +103,38 @@ body {
     text-align: center;
     margin-bottom: 3rem;
 }
-.section img {
+.section:not(.home) img {
     width: 100%;
-    height: 60vh; /* Adjust as needed */
+    display: block; /* Prevent extra space below inline images */
     object-fit: cover;
-    filter: brightness(60%); /* Darken image for text readability */
-}
-.section h1 {
-    color: #d6d2d2; /* Bootstrap danger red for sale */
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
+    height: auto; /* Adjust height as needed or set a fixed height */
 }
 
-.section h3 {
-    color: #6c757d; /* Bootstrap secondary gray */
+.section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ensure text is readable on the image */
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    padding: 20px; /* Add some padding around the text */
+}
+
+.section-content h1 {
+    color: white; /* Ensure text is white */
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add a text shadow for better readability */
+}
+
+.section-content h3 {
+    color: white; /* Ensure text is white */
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Add a text shadow */
 }
+
 
 .section .divider {
     border-top: 1px solid #dee2e6;
@@ -149,7 +182,7 @@ body {
 
 /* --- Newsletter Section --- */
 .newsletter {
-    background-color: #007bff; /* Bootstrap primary blue */
+    background-color: #ffb300; /* Bootstrap primary blue */
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -228,6 +261,23 @@ body {
 
 #contacts a:hover {
     text-decoration: underline;
+}
+/* style.css additions */
+
+/* General table styling (optional, often Bootstrap covers this well) */
+.table {
+    width: 100%; /* Ensure table takes full width of its parent */
+    margin-bottom: 1rem; /* Add some space below the table */
+    color: #212529; /* Default text color for table */
+   
+}
+.product-thumbnail {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Make it square */
+    object-fit: cover; /* Crop image to fit without distortion */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-right: 10px; /* Space between image and text */
+    vertical-align: middle; /* Align image nicely with the text */
 }
 
 /* --- Responsive Adjustments --- */
