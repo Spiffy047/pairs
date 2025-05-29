@@ -148,6 +148,12 @@ body {
     width: 50%;
     margin: 0 auto;
 }
+.section .btn{
+     border-radius: 0 0.25rem 0.25rem 0; /* Sharp left, rounded right */
+    background-color: #28a745; /* Bootstrap success green */
+    border-color: #28a745;
+    color: white;
+}
 
 /* --- Items Section --- */
 .items {
